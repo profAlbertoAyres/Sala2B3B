@@ -1,0 +1,108 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.menuEsquerdo {
+    display: flex;
+    align-items: center;
+}
+
+.menuEsquerdo h1 {
+    color: #fff;
+}
+
+.menuLista {
+    display: flex;
+    align-items: center;
+}
+
+.menuLista ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.itemMenu {
+    margin: 0 1px;
+}
+
+.linkItem {
+    text-decoration: none;
+    font-size: 14pt;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.menuDireito a {
+    border: none;
+    background-color: rgb(11, 9, 88);
+    padding: 8px 13px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menuBotao {
+    display: none;
+}
+
+.respMenu {
+    display: none;
+}
+
+@media screen and (max-width: 740px) {
+    .menu {
+        padding: 1.5rem 4rem;
+    }
+
+    .menuLista {
+        display: none;
+    }
+
+    .menuDireito {
+        display: none;
+    }
+
+    .menuBotao {
+        display: block;
+    }
+
+    .menuBotao button {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .respMenu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        list-style: none;
+    }
+
+    .respMenu .itemMenu{
+        display: block;
+        padding: 1.2rem;
+    }
+
+    .respMenu .menuDireito{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .respMenu .menuDireito a{
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .abrir{
+        display: block;
+    }
+
+}
