@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Formulário bootstrap</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container mt-3">
+        <form action="">
+            <div class="row g-3">
+                <div class="col">
+                    <label for="numero1" class="form-label">Número 1</label>
+                  <input type="text" class="form-control" placeholder="Número 1" aria-label="Número 1" name="numero1" id="numero1"
+                  >
+                </div>
+                <div class="col">
+                    <label for="numero2" class="form-label">Número 2</label>
+                  <input type="text" class="form-control" placeholder="Número 2" aria-label="Número 2" name="numero2" id="numero2">
+                </div>
+                <div class="col">
+                    <label class="form-label">Resultado</label>
+                    <input type="text" name="resultado" id="resultado" class="form-control" readonly>
+                </div>
+              </div>
+              <button type="button" class="btn btn-info" onclick="somarValores()">Calcular</button>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/calculos.js"></script>
+</body>
+</html>
